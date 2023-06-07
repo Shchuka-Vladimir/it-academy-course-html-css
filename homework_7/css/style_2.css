@@ -155,15 +155,15 @@ body {
   height: 23px;
   border-radius: 50%;
 }
-.avatar_1-position {
+.avatar1-position {
   position: absolute;
   left: 1px;
 }
-.avatar_2-position {
+.avatar2-position {
   position: absolute;
   left: 18px;
 }
-.avatar_3-position {
+.avatar3-position {
   position: absolute;
   right: 28px;
 }
@@ -217,7 +217,7 @@ body {
   font-size: 21px;
   font-weight: 500;
 }
-.per_person {
+.person {
   font-size: 12px;
   color: #adadad;
 }

@@ -54,14 +54,14 @@
     red 20%
   );
 }
-.line_1 {
+.line-1 {
   margin-left: 2px;
   margin-top: 4px;
   width: 30px;
   height: 6px;
   background-color: red;
 }
-.line_2 {
+.line-2 {
   margin-left: 2px;
   margin-top: 4px;
   width: 20px;
