@@ -6,7 +6,7 @@ body {
   background-color: #fafafa;
   font-family: "Roboto", Arial, sans-serif;
 }
-.page-wpapper {
+.page-wrapper {
   padding-left: 28px;
   padding-right: 28px;
   overflow-y: auto;
@@ -257,6 +257,9 @@ body {
   color: black;
 }
 .footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
