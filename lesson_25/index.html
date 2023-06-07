@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style3.css" />
+  </head>
+  <body>
+    <div class="todolist-wrapper">
+      <h1>To do List</h1>
+      <form onsubmit="formEvent(event)">
+        <div class="input-container">
+          <input
+            class="input"
+            type="text"
+            name="todo"
+            placeholder="Add your new todo"
+            required
+          />
+          <button type="submit" class="button button-add">
+            <span class="material-symbols-outlined icon-size"> add </span>
+          </button>
+        </div>
+        <ol class="list"></ol>
+        <div class="footer">
+          <span class="footer-content"
+            >You have&nbsp;<span class="total">0</span>&nbsp;pending tasks</span
+          >
+          <button
+            class="button button-clear"
+            type="button"
+            onclick="removeAll()"
+          >
+            Clear All
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/script3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+body {
+  margin: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-width: 450px;
+}
+.page {
+  padding-left: 72px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 72px 0px 0px;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  padding-bottom: 34px;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+.icon {
+  width: 28px;
+  height: 28px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.plant-background {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.plant-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main_best {
+  display: flex;
+  min-height: calc(100vh - 68px);
+}
+.empty-box {
+  width: 83%;
+  height: 63%;
+  background-color: #e7f8ee;
+}
+.introduction {
+  font-weight: 500;
+  line-height: 151%;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 6px;
+}
+.title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+}
+.button {
+  margin-top: 48px;
+  width: 221px;
+  height: 69px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #2e7f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+.icon-arrow {
+  width: 8px;
+  height: 14px;
+}
+.item {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.05em;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.article {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.05em;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.main_today {
+  display: flex;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  padding-left: 72px;
+}
+.plant_circle-background {
+  width: 50%;
+  object-fit: cover;
+}
+.footer {
+  background-color: #3c9c63;
+  padding-top: 78px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 102px;
+  align-items: center;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #2e8d55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 31px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 16px;
+}
+.footer-content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.95);
+}
+.floor {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.label {
+  display: none;
+}
+.menu {
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .main_best {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+  .empty-box {
+    width: 100%;
+  }
+  .plant-background {
+    width: 100%;
+    height: 828px;
+  }
+  .nav-link {
+    position: absolute;
+    top: -600px;
+    right: 0px;
+    transition: top 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7f8ee;
+    width: 300px;
+    height: 600px;
+    justify-content: space-evenly;
+    font-size: 32px;
+    z-index: 1;
+  }
+  .label {
+    display: block;
+    position: absolute;
+    right: 0px;
+  }
+  .header {
+    position: relative;
+  }
+  .nav-icon {
+    position: absolute;
+    right: 140px;
+  }
+  input:checked ~ .nav-link {
+    top: 80px;
+  }
+}

@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  animation: position 2s infinite ease-in alternate;
+}
+@keyframes position {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+.wrap {
+  margin-top: 20px;
+  display: flex;
+}
+.text {
+  font-family: monospace;
+  overflow: hidden;
+  animation: text1 2s infinite steps(23);
+  white-space: nowrap;
+}
+@keyframes text1 {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 23ch;
+  }
+}
+.cursor {
+  animation: cursor 0.7s infinite linear;
+}
+@keyframes cursor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.item::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 30px;
+  background-color: green;
+  transform: translateX(-20px);
+  transition: transform 1s ease;
+}
+.item:hover::before {
+  transform: translateX(-5px);
+}
+.item:hover {
+  color: green;
+}
+
+/* .img {
+  position: relative;
+  display: inline-block;
+}
+.img::before {
+  content: "assistant_navigation";
+  font-family: "Material Symbols Outlined";
+  font-size: 36px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+} */
