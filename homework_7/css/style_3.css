@@ -6,7 +6,7 @@ body {
   background-color: #fafafa;
   font-family: "Roboto", Arial, sans-serif;
 }
-.page-wpapper {
+.page-wrapper {
   padding-left: 28px;
   padding-right: 28px;
   overflow-y: auto;
@@ -43,7 +43,7 @@ body {
   text-decoration: none;
   color: black;
 }
-.calendar-wpapper {
+.calendar-wrapper {
   padding: 16px 16px 28px 16px;
   box-shadow: 0 4px 4px #e6e6e6;
   border-radius: 10px;
@@ -74,7 +74,7 @@ body {
   color: #adadad;
   gap: 38px;
 }
-.calendar-position-wpapper {
+.calendar-position-wrapper {
   padding: 8px;
   border-radius: 10px;
   background-color: black;
