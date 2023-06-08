@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  overflow: hidden;
 }
 .page {
   background-color: #fafafa;
@@ -11,7 +10,7 @@ body {
   padding-right: 28px;
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100vh - 228px);
+  height: calc(100vh - 208px);
 }
 .header-wrapper {
   padding: 56px 28px 32px;
